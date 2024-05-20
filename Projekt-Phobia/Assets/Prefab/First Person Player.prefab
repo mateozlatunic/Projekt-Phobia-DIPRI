@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 3157206057279530743}
   - component: {fileID: 6434714892099613721}
   - component: {fileID: 2363336682877199553}
+  - component: {fileID: 4427276468266795549}
   m_Layer: 0
   m_Name: First Person Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77,7 +78,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 3157206057279530743}
-  speed: 12
+  speed: 16
   gravity: -21
   groundCheck: {fileID: 4134302959504583128}
   groundDistance: 0.4
@@ -106,6 +107,29 @@ MonoBehaviour:
   turnOff: {fileID: 5150099167866790339}
   on: 0
   off: 1
+--- !u!136 &4427276468266795549
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37200730717279216}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.7321803
+  m_Height: 3.7010474
+  m_Direction: 1
+  m_Center: {x: 0.067995965, y: 2.392506, z: -0.06934607}
 --- !u!1 &279465138702799218
 GameObject:
   m_ObjectHideFlags: 0
@@ -728,6 +752,7 @@ GameObject:
   - component: {fileID: 2581465193614841576}
   - component: {fileID: 6429366112119300454}
   - component: {fileID: 1261065693513131423}
+  - component: {fileID: 1869024597014066394}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -841,6 +866,27 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!65 &1869024597014066394
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3991054349854149504}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 9.221661}
+  m_Center: {x: -1.5750069e-15, y: 1, z: 4.1108303}
 --- !u!1 &4194674666451265124
 GameObject:
   m_ObjectHideFlags: 0
