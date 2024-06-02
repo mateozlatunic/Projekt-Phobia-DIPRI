@@ -35,4 +35,21 @@ public class letter : MonoBehaviour
             letterMesh.enabled = false;
         }
     }
+
+    // Nova metoda za zatvaranje pisma
+    public void closeLetter()
+    {
+        if (toggle == true)
+        {
+            toggle = false;
+            letterUI.SetActive(false);
+            letterMesh.enabled = true;
+        }
+    }
+
+    // Metoda koja vraća trenutno stanje pisma
+    public bool isLetterOpen()
+    {
+        return toggle;
+    }
 }

@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/SceneMarkoG/GlavniMenu.unity
     guid: e0cb3454aa86932428daeda2a18a758d
+  - enabled: 1
+    path: Assets/Scene/Basement.unity
+    guid: 834fb171afc66f24e8a4432d080782cb
+  - enabled: 1
+    path: Assets/Scene/safeRoom.unity
+    guid: bf2e567c6aa03c54d8198244e85b219f
   m_configObjects: {}
