@@ -897,7 +897,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   basementDoor: 1
+  upperfloarDoor: 0
   basementKey: 0
+  upperfloarKey: 0
   _keyInventory: {fileID: 256225354}
 --- !u!1001 &68425880
 PrefabInstance:
@@ -4941,6 +4943,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasBasementKey: 0
+  hasUpperfloarKey: 0
 --- !u!1001 &258590682
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36836,7 +36839,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   basementDoor: 0
+  upperfloarDoor: 0
   basementKey: 1
+  upperfloarKey: 0
   _keyInventory: {fileID: 256225354}
 --- !u!65 &2142489358
 BoxCollider:

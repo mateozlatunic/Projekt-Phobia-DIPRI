@@ -7,6 +7,7 @@ namespace KeySystem
     public class KeyInventory : MonoBehaviour
     {
         public bool hasBasementKey = false;
+        public bool hasUpperfloarKey = false;
         
     }
 }

@@ -41,6 +41,16 @@ namespace KeySystem
                     StartCoroutine(PauseDoorInteraction());
                 }
             }
+
+            else if (_keyInventory.hasUpperfloarKey)
+            {
+                if (!pauseInteraction)
+                {
+                    doorScript.OpenDoor();
+                    doorOpen = !doorOpen;
+                    StartCoroutine(PauseDoorInteraction());
+                }
+            }
             else
             {
                 StartCoroutine(ShowDoorLocked());
