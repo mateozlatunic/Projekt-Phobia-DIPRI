@@ -8,11 +8,20 @@ public class PickUpBalloon : MonoBehaviour
 {
     public GameObject BalloonPickUp;
     public GameObject PickUpText;
+    private playerMovement playerMovementScript;
+
     void Start()
     {
         BalloonPickUp.SetActive(false);
         PickUpText.SetActive(false);
+
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
+        {
+            playerMovementScript = player.GetComponent<playerMovement>();
+        }
     }
+
     void OnTriggerStay(Collider other)
     {
         if (other.gameObject.tag == "Player")
@@ -22,15 +31,22 @@ public class PickUpBalloon : MonoBehaviour
             if (Input.GetKey(KeyCode.E))
             {
                 this.gameObject.SetActive(false);
-
-                BalloonPickUp.gameObject.SetActive(true);
-
+                BalloonPickUp.SetActive(true);
                 PickUpText.SetActive(false);
+
+                if (playerMovementScript != null)
+                {
+                    playerMovementScript.jumpHeight += 6f;
+                }
             }
         }
     }
+
     void OnTriggerExit(Collider other)
     {
-        PickUpText.SetActive(false);
+        if (other.gameObject.tag == "Player")
+        {
+            PickUpText.SetActive(false);
+        }
     }
 }
