@@ -26,4 +26,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/PlayHouse.unity
     guid: 8c10fb858a3365042899dfd44cc2aafc
+  - enabled: 1
+    path: Assets/Scene/Ending.unity
+    guid: 803e793a70b1e0341b175ff4eff6b5c5
+  - enabled: 1
+    path: Assets/Scene/Credits.unity
+    guid: f25f1f3f9d74e554292790251dcad18a
   m_configObjects: {}
